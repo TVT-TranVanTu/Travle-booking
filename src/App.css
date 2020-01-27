@@ -1,0 +1,575 @@
+
+
+/*-------------------------------------------owl carousel-------------------------------------------*/
+.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    font-size: 20px !important;
+    background: rgba(255,255,255,.7) !important;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    border-radius: 50%;
+    transition: all .0s;
+}
+.owl-carousel .owl-nav .owl-next:hover,
+.owl-carousel .owl-nav .owl-next:active{
+    background: #f1f1f1 !important;
+}
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-prev:active{
+    background: #f1f1f1 !important;
+}
+
+.owl-carousel .owl-nav .owl-next{
+    right: 0px;
+
+}
+.owl-carousel .owl-nav .owl-prev{
+    left: 0px;
+}
+/*-------------------------------------------home-pages------------------------------------------------*/
+.home-pages{
+    background-color: #f1f1f1;
+    background-image: initial;
+    position: relative;
+}
+.home-pages hr.hr-items{
+    border-top: 2px solid red;
+}
+
+h2 {
+    font-weight: 300 !important;
+    font-size: 30px;
+    color: #444;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+/*-------------------------------------------Body------------------------------------------------*/
+.form-title h2 {
+    font-weight: 300;
+    font-size: 24px;
+    color: #444;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+/*-------------------------------------------Search------------------------------------------------*/
+.sectionsearch{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+.datepicker{
+    width: 650px;
+    margin: -120px 0 0;
+    position: relative;
+}
+
+.datepicker a.active{
+    background: #fff;
+    color: #222;
+}
+
+.datepicker a{
+    background: rgba(34,34,34,.5);
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    padding: 13px 30px;
+    position: relative;
+}
+.datepicker a span{
+    margin-left: 10px;
+}
+.buttonsearch{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.formsearch{
+    width: 100%;
+    margin-bottom: 11px;
+    background-color: #fff;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.formsearch p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+
+.buttonplanesearch{
+    width: 100%;
+}
+.dropdowntoggles{
+    width: 100% !important;
+    color: black;
+    background-color: #FFFFFF !important;
+    border: 1px solid #DDDDDD;
+}
+.dropdowntoggles:hover,
+.dropdowntoggles:active{
+    color: black;
+    background-color: #FFFFFF !important;
+    border: 1px solid #DDDDDD;
+}
+.dropdownsearch{
+    width: 100% !important;
+}
+.dropdownsearch .dropdown-item:hover,
+.dropdownsearch .dropdown-item:active{
+    background-color: #d8d8d8;
+}
+.dropdown-toggle::after{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin: 0 0 0 5px;
+}
+/*-------------------------------------------Reason------------------------------------------------*/
+
+
+.reason{
+    text-align: center;
+}
+.reason img{
+    margin-bottom: 30px;
+}
+.reason .orange{
+    color: orange;
+}
+.reason .reason-show {
+    background: #ff8916;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+    border: 1px solid transparent;
+    padding: 0 3px;
+}
+.reason a, button, input {
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+.reason h6{
+    font-size: 110%;
+    font-weight: 700;
+}
+.reason p{
+    font-size: 14px;
+}
+
+
+/*-------------------------------------------hotplace------------------------------------------------*/
+
+.hotplace{
+    margin-top: 60px;
+    text-align: center;
+}
+.hotplace .picture{
+    margin-bottom: 10px;
+}
+.hotplace .picture .about-picture{
+    padding: 0 5px ;
+    position: relative;
+    transition: all .5s;
+
+}
+.about-picture .picture-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    transition: all .5s;
+    transform: translate(-50%,-50%);
+}
+.about-picture .picture-title:hover,
+.about-picture .picture-title:active{
+    transform: translate(-50%,-100%);
+    
+}
+.place-info{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: left;
+    margin: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.place-info:hover,
+.place-info:active{
+    opacity: 1;
+}
+.place-info-head,.place-info-body{
+    margin-bottom: 30px !important;
+    
+}
+.hotplace img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*-------------------------------------------InternationalPlace------------------------------------------------*/
+.InternationalPlace{
+    margin-top: 60px;
+    text-align: center;
+}
+.InternationalPlace .picture{
+    margin-bottom: 10px;
+}
+.InternationalPlace img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.InternationalPlace .picture .about-picture{
+    padding: 0 5px ;
+}
+.InternationalPlace .picture .about-picture .childpicture{
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------achievement------------------------------------------------*/
+
+
+.achievement{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.form-title span {
+    width: 200px;
+    height: 2px;
+    background-color: #d8d8d8;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.achievement .picture p{
+    font-size: 14px;
+    line-height: 17px;
+}
+.achievement .picture img{
+    display: inline-block !important;
+    align-items: center;
+    width: 148px!important;
+    height: 90px;
+}
+.achievement .picture .element-icons p.title-icons{
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+}
+.achievement .picture .element-icons{
+    max-width: fit-content;
+    padding: 0 10px;
+    margin: 0;
+}
+.achievement .picture .element-icons p.vi{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.achievement .picture .element-icons .vilacaed{
+    width: 100px !important;
+}
+.theguid{
+    height: 90px !important;
+}
+/*-------------------------------------------mediatracking------------------------------------------------*/
+
+.mediatracking{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.mediatracking .picture{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-------------------------------------------Footer------------------------------------------------*/
+.footer-container .body-hr{
+    width: 80%;
+    margin: auto;
+}
+
+.footer-container .footer-head{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 8%;
+    font-size: 130%;
+    font-weight: 700;
+    margin-bottom:40px ;
+}
+.footer-container .footer-head .footer-title{
+    width: 20%;
+}
+.footer-container .footer-head .footer-hr {
+    width: 80%;
+}
+
+.footer-container .list-hotel{
+    margin-bottom: 40px;
+}
+.footer-container .list-hotel .hotel{
+    margin-bottom: 7px;
+}
+.about-travle-booking{
+    margin-top: 40px;
+}
+.about-travle-booking ul{
+    list-style: none;
+    padding: 0;
+}
+.about-travle-booking ul li{
+    margin-bottom: 3px;
+    font-size: 120%;
+}
+.title-folow{
+    text-align: center;
+}
+
+.social-icon{
+    text-align: center;
+    margin-top: 20px;
+    list-style: none;
+}
+.social-icon li{
+    display: inline-block;
+    font-size: 300%;
+    color: blue;
+    margin-left: 10px;
+}
+.social-icon li i{
+    transition: all .3s;
+    cursor: pointer;
+}
+.social-icon li i:hover,
+.social-icon li i:active{
+    transform: scale(1.3);
+    color: #e67e22;
+}
+.image-app{
+    text-align: center;
+}
+.subscribe-title{
+    font-size: 120%;
+    color: #262626;
+    font-weight: 300;
+}
+.subscribe-title b{
+    font-weight: 700;
+}
+.form{
+    margin-top: 20px;
+    display: flex;
+}
+.form .button{
+    width: 30%;
+    font-size: 70%;
+    background-color: #ff8916;
+    border: 0;
+}
+
+
+.end-page{
+    background-color: #e67e22;
+    height: 100px;
+}
+
+.p-footer{
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    font-size: 120%;
+    font-weight: 500;
+    color: white;
+    padding-right: 15px;
+}
+.left-footer{
+    display: flex;
+    padding: 15px 0 10px;
+}
+.img-footer{
+    align-items: center !important;
+    margin-left: 25px;
+}
+
+
+
+
+
+/*-----------------------------------------HotelPages--------------------------------------------*/
+
+
+/*---------------------------------------SearchHotel---------------------------------------------*/
+.hotel-pages{
+    background-color: #f1f1f1;
+    background-image: initial;
+    position: relative;
+    margin-top: 10px;
+}
+/*------------------------------------------------SearchHotel------------------------------------------*/
+.search-hotel{
+    margin-top: auto;
+}
+.pagehotel{
+    background: rgba(0,0,0,.05);
+
+}
+
+
+/*------------------------------------------------Leftbar---------------------------------------------*/
+.leftbar{
+    margin-top: 20px;
+}
+.mapBlock{
+    margin-bottom: 20px;
+}
+
+.mapBlock .searchmap{
+    background: #fff;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(224, 217, 217);
+    font-weight: 300;
+    width: 206px;
+    position: absolute;
+    top: 80px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+
+
+.searchmap i{
+    margin-right: 10px;
+}
+
+
+.commitment{
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.commitment .cheapest-img img{
+    margin: 10px 10px 0 10px;
+    display: block;
+    float: left;
+}
+.title-adv{
+    padding: 15px 15px 15px 15px;
+    font-size: 16px;
+}
+
+.title-adv .title-strong{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.price{
+    background: white;
+    padding: 15px;
+}
+.checkbox-price{
+    text-align: center;
+}
+.price span{
+    float: right;
+}
+
+
+
+.evaluate-star{
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+}
+.evaluate-star span{
+    float: right;
+}
+.starrating{
+    bottom:5px;
+    width: 30px;
+    vertical-align: middle !important;
+}
+
+
+.area-checkbox{
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+}
+.area-checkbox span{
+    float: right;
+}
+
+.accommodation{
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+}
+.accommodation span{
+    float: right;
+}
+
+.related-image{
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+}
+.related-image ul{
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0;
+}
+.related-image ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+.related-image ul li p{
+    margin-left: 10px;
+}
+.related-image img{
+    width: 70px;
+    height: 70px;
+}
+
+/*--------------------------------------------Main-----------------------------------------------------*/
+.place-name h1 {
+    font-size: 34px;
+    color: #444;
+    margin: 5px 0 15px;
+}
+.soft-search {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    float: left;
+    display: table;
+    width: 100%;
+}
+
+.main .collap-filter-nav ul li{
+    list-style: none;
+    padding: 0 10px;
+    padding-left: 0;
+    float: left;
+}
