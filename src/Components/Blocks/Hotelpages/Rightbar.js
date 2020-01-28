@@ -39,13 +39,7 @@ export default class Rightbar extends Component {
               <span>Khuyến mãi giờ chót</span>
             </div>
             <div className="prv-last-dropdow">
-              <p>Giamr giá đặc biệt chỉ trong</p>
-            </div>
-            <div className="prv-last-dropdow">
-              <p>Test</p>
-            </div>
-            <div className="prv-last-dropdow">
-              <p>Test lần 2</p>
+              <p>Giảm giá đặc biệt chỉ trong</p>
             </div>
         </div>
       </div>
