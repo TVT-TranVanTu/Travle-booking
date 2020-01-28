@@ -44,6 +44,9 @@ export default class Rightbar extends Component {
             <div className="prv-last-dropdow">
               <p>Test</p>
             </div>
+            <div className="prv-last-dropdow">
+              <p>Test lần 2</p>
+            </div>
         </div>
       </div>
     );
