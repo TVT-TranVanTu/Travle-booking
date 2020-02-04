@@ -26,5 +26,6 @@ let elementsHotel = [
     },
     
     
+    
 ]
 export default elementsHotel;

@@ -136,25 +136,21 @@ export default class Rightbar extends Component {
           <div className="box-filter-title">
             <h3>Khách sạn Hà Nội Theo Hạng sao</h3>
           </div>
-          <div className="box-filter-content">
-            <Row>
+            <Row className="box-filter-content">
               <Col sm="4">Khách sạn 1 sao Hà Nội</Col>
               <Col sm="4">Khách sạn 2 sao Hà Nội</Col>
               <Col sm="4">Khách sạn 3 sao Hà Nội</Col>
               <Col sm="4">Khách sạn 4 sao Hà Nội</Col>
               <Col sm="4">Khách sạn 5 sao Hà Nội</Col>
             </Row>
-          </div>
           <div className="box-filter-title">
             <h3>Khách sạn Hà Nội Theo Quận Huyện</h3>
           </div>
-          <div className="box-filter-content">
-            <Row>
+            <Row className="box-filter-content">
               <Col sm="4">Khách sạn Hoàn Kiếm Hà Nội</Col>
               <Col sm="4">Khách sạn Hai Bà Trưng Hà Nội</Col>
               <Col sm="4">Khách sạn Đông Anh Hà Nội</Col>
             </Row>
-          </div>
         </div>
       </div>
     );
