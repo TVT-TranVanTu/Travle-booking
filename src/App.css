@@ -559,17 +559,61 @@ h2 {
     color: #444;
     margin: 5px 0 15px;
 }
+
+
+
+/*----------------------------------------------------Hotel..Rightbar-------------------------------------*/
 .soft-search {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-bottom: 1px solid #ddd;
     float: left;
     display: table;
     width: 100%;
 }
 
-.main .collap-filter-nav ul li{
+.main-rightbar ul{
+    padding: 0 !important;
+    list-style: none;
+}
+
+.main-rightbar .collap-filter-nav ul li{
     list-style: none;
     padding: 0 10px;
     padding-left: 0;
     float: left;
+}
+
+
+.item-infor ul{
+    display: flex;
+    padding: 0 0 0 40px !important;
+}
+.item-infor ul li{
+    margin-right: 10%;
+
+}
+.item-infor ul li i{
+    margin-right: 5px;
+
+}
+
+
+.price-number{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.elementitem{
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 1px transparent;
+}
+.content-infor{
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(27,27,27,.1);
+}
+
+.footer-rightbar{
+    margin-top: 100px;
+    background: #fff;
 }

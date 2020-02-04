@@ -1,24 +1,110 @@
 import React, { Component } from "react";
+import {
+  Button,
+  FormGroup,
+  Input,
+  Row,
+  Col,
+  Form,
+  Container
+} from "reactstrap";
+
+import StarRatings from "react-star-ratings";
+
+import ElementHotel from '../../Data/elements-hotel';
+
 export default class Rightbar extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      elements : ElementHotel,
+    };
   }
   render() {
+
+    let Element =this.state.elements;
+    const listElements =Element.map(Element => (
+      <li key={Element.id}>
+          <div className="elementitem">
+          <Container>
+            <Row>
+              <Col sm="3">
+                <img
+                  width="200px"
+                  alt="..."
+                  src={require(`../../../assets/img/hotelpages/${Element.picture}`)}
+                />
+              </Col>
+              <Col sm="6" className="content-infor">
+                <div className="item-infor">
+                  <div className="infor-name">
+                    <h2>{Element.name}</h2>
+                    <div className="rating-hotel">
+                      <StarRatings
+                        className="starrating"
+                        rating={5}
+                        starDimension="15px"
+                        starSpacing="1px"
+                        starRatedColor="orange"
+                        numberOfStars={5}
+                        name="rating"
+                      />
+                    </div>
+                    <div className="address-infor">
+                      <i class="fa fa-map-marker"></i>
+                      <p>
+                        {Element.address}
+                        <a class="a-map-hotel">(Xem bản đồ)</a>
+                      </p>
+                    </div>
+                    <ul>
+                      <li>
+                        <i class="fas fa-wifi"></i>wifi
+                      </li>
+                      <li>
+                        <i class="fas fa-utensils"></i>restaurent
+                      </li>
+                      <li>
+                        <i class="fas fa-spa"></i>spa
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="accum-point">
+                  <img
+                  width="40px"
+                  alt="..."
+                  src={require("../../../assets/img/hotelpages/viplogo.png")}
+                  />
+                  <span>
+                    Hòan tiền {Element.Refund}đ
+                  </span>
+                  </div>
+                </div>
+              </Col>
+              <Col sm="3" className="content-infor">
+                <div className="price-hotel">
+                  <p className="price-number">{Element.prices}đ</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </li>
+      ))
     return (
-      <div className="main">
+      <div className="main-rightbar">
         <h1>Hello word</h1>
         <div className="place-name">
           <h1>Khách sạn tại Hà Nội</h1>
         </div>
-        <div class="soft-search">
-          <div class="sortBlock-left">
-            <div class="collap-filter-nav">
-              <ul class="filter-nav">
-                <li class="first-sort">
+        <div className="soft-search">
+          <div className="sortBlock-left">
+            <div className="collap-filter-nav">
+              <ul className="filter-nav">
+                <li className="first-sort">
                   <a>Sắp xếp theo được gợi ý</a>
                 </li>
-                <li class="">
+                <li className="">
                   <a>Giá rẻ trước</a>
                 </li>
                 <li>
@@ -33,7 +119,7 @@ export default class Rightbar extends Component {
           </div>
           <div class="pull-right select-time-price">Giá 1 đêm</div>
         </div>
-        <div className="prvItem">
+        {/* <div className="prvItem">
             <div className="prv-last">
               <i class="fa fa-bolt"></i>
               <span>Khuyến mãi giờ chót</span>
@@ -41,6 +127,34 @@ export default class Rightbar extends Component {
             <div className="prv-last-dropdow">
               <p>Giảm giá đặc biệt chỉ trong</p>
             </div>
+        </div> */}
+        <ul className="content-rightbarHotel">
+          {listElements}
+        </ul>
+
+        <div className="footer-rightbar">
+          <div className="box-filter-title">
+            <h3>Khách sạn Hà Nội Theo Hạng sao</h3>
+          </div>
+          <div className="box-filter-content">
+            <Row>
+              <Col sm="4">Khách sạn 1 sao Hà Nội</Col>
+              <Col sm="4">Khách sạn 2 sao Hà Nội</Col>
+              <Col sm="4">Khách sạn 3 sao Hà Nội</Col>
+              <Col sm="4">Khách sạn 4 sao Hà Nội</Col>
+              <Col sm="4">Khách sạn 5 sao Hà Nội</Col>
+            </Row>
+          </div>
+          <div className="box-filter-title">
+            <h3>Khách sạn Hà Nội Theo Quận Huyện</h3>
+          </div>
+          <div className="box-filter-content">
+            <Row>
+              <Col sm="4">Khách sạn Hoàn Kiếm Hà Nội</Col>
+              <Col sm="4">Khách sạn Hai Bà Trưng Hà Nội</Col>
+              <Col sm="4">Khách sạn Đông Anh Hà Nội</Col>
+            </Row>
+          </div>
         </div>
       </div>
     );
