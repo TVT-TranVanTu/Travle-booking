@@ -27,6 +27,7 @@
 .owl-carousel .owl-nav .owl-prev{
     left: 0px;
 }
+/*-------------------------------------------Topbar---------------------------------------------------*/
 /*-------------------------------------------home-pages------------------------------------------------*/
 .home-pages{
     background-color: #f1f1f1;
@@ -187,8 +188,7 @@ h2 {
     transition: all .5s;
     transform: translate(-50%,-50%);
 }
-.about-picture .picture-title:hover,
-.about-picture .picture-title:active{
+.about-picture .picture-title:hover{
     transform: translate(-50%,-100%);
     
 }

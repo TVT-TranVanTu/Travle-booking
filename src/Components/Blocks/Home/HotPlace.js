@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { BrowserRouter as Router ,Link, Route,Switch ,Redirect} from 'react-router-dom';
+import { Container, Row, Col, NavLink } from "reactstrap";
+import Hotelpages from "../Hotelpages/Hotelpages";
 export default class HotPlace extends Component {
   render() {
     return (
+      <Router>
       <div className="hotplace">
         <div className="form-title">
           <h2 className="padding40">ĐIỂM ĐẾN VIỆT NAM PHỔ BIẾN</h2>
@@ -10,7 +13,7 @@ export default class HotPlace extends Component {
         </div>
         <Container>
           <Row className="picture">
-            <Col sm="4" className="about-picture">
+            <Col sm="4" tag={Link} to="/hanoi" className="about-picture">
               <img
                 alt="..."
                 src={require("../../../assets/img/hotplace/quactugiam.jpg")}
@@ -89,6 +92,10 @@ export default class HotPlace extends Component {
           </Row>
         </Container>
       </div>
+      <Switch>
+            <Route path="/hanoi" render={props => <Hotelpages {...props} />}></Route>
+      </Switch>
+      </Router>
     );
   }
 }

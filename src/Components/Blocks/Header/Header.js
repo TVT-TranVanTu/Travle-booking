@@ -26,6 +26,9 @@ function Header() {
     setNavbarCollapse(!navbarCollapse);
     document.documentElement.classList.toggle("nav-open");
   }; 
+  function change_css(){
+    document.getElementById("fixed-top").style.position='relative';
+  };
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
