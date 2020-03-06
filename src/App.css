@@ -167,6 +167,12 @@ hr{
 .styles_modal__gNwvD {
     background: transparent !important;
 }
+#login{
+    cursor: pointer;
+}
+#signup{
+    cursor: pointer;
+}
 /*-------------------------------------------home-pages------------------------------------------------*/
 .home-pages{
     background-color: #f1f1f1;
