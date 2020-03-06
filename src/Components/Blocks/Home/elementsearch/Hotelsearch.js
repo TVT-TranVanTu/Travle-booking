@@ -59,6 +59,7 @@ export default class Hotelsearch extends Component {
                   </Col>
                   <Col>
                     <Button className="buttonsearch" color="info" type="button">
+                    <i className="fas fa-search"></i>
                       Search
                     </Button>
                   </Col>

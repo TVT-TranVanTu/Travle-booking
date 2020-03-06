@@ -54,7 +54,8 @@ export default class Searchhotel extends Component {
                     </FormGroup>
                   </Col>
                   <Col>
-                    <Button color="info" type="button">
+                    <Button  color="info" type="button">
+                    <i className="fas fa-search"></i>
                       Search
                     </Button>
                   </Col>

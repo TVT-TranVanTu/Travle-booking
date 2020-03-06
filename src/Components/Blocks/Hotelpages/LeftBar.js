@@ -7,8 +7,6 @@ import {
   Input,
   CustomInput,
   Media,
-  Card,
-  CardImg
 } from "reactstrap";
 import StarRatings from "react-star-ratings";
 
@@ -18,9 +16,7 @@ import convenient from "../../Data/hotelDV";
 import relate from "../../Data/Related ";
 import Rightbar from "./Rightbar";
 
-var imgStyle = {
-  minWidth: "128px"
-};
+
 
 export default class LeftBar extends Component {
   constructor(props) {

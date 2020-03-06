@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router ,Link, Route,Switch ,Redirect} from 'react-router-dom';
-import { Container, Row, Col, NavLink } from "reactstrap";
+import { BrowserRouter as Router ,Link, Route,Switch } from 'react-router-dom';
+import { Container, Row, Col } from "reactstrap";
 import Hotelpages from "../Hotelpages/Hotelpages";
 export default class HotPlace extends Component {
   render() {

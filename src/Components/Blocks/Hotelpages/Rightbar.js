@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import {
-  Button,
-  FormGroup,
-  Input,
   Row,
   Col,
-  Form,
   Container
 } from "reactstrap";
 
@@ -51,25 +47,25 @@ export default class Rightbar extends Component {
                       />
                     </div>
                     <div className="address-infor">
-                      <i class="fa fa-map-marker"></i>
+                      <i className="fa fa-map-marker"></i>
                       <p>
                         {Element.address}
-                        <a class="a-map-hotel">(Xem bản đồ)</a>
+                        <a className="a-map-hotel">(Xem bản đồ)</a>
                       </p>
                     </div>
                     <ul>
                       <li>
-                        <i class="fas fa-wifi"></i>wifi
+                        <i className="fas fa-wifi"></i>wifi
                       </li>
                       <li>
-                        <i class="fas fa-utensils"></i>restaurent
+                        <i className="fas fa-utensils"></i>restaurent
                       </li>
                       <li>
-                        <i class="fas fa-spa"></i>spa
+                        <i className="fas fa-spa"></i>spa
                       </li>
                     </ul>
                   </div>
-                  <div class="accum-point">
+                  <div className="accum-point">
                   <img
                   width="40px"
                   alt="..."
@@ -117,11 +113,11 @@ export default class Rightbar extends Component {
               </ul>
             </div>
           </div>
-          <div class="pull-right select-time-price">Giá 1 đêm</div>
+          <div className="pull-right select-time-price">Giá 1 đêm</div>
         </div>
         {/* <div className="prvItem">
             <div className="prv-last">
-              <i class="fa fa-bolt"></i>
+              <i className="fa fa-bolt"></i>
               <span>Khuyến mãi giờ chót</span>
             </div>
             <div className="prv-last-dropdow">

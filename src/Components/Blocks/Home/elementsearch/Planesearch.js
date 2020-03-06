@@ -67,8 +67,8 @@ export default class Planesearch extends Component {
               </FormGroup>
             </Col>
             <Col>
-              <p>.</p>
               <Button className="buttonplanesearch" color="info" type="button">
+              <i className="fas fa-search"></i>
                 Tìm kiếm
               </Button>
             </Col>

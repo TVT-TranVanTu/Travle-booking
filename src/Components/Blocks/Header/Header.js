@@ -88,18 +88,15 @@ class Header extends Component {
                     <NavLink>MassageSPA</NavLink>
                   </NavItem>
                 </Nav>
-                <Nav navbar>
+                <Nav navbar className="form_login_register">
                   <NavItem>
                     <NavLink id="login" onClick={this.onOpenModalLogin}>
                       Đăng nhập
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink id="signup" onClick={this.onOpenModal}>
-                      Đăng ký
-                    </NavLink>
+                    <Button color="info" id="signup" onClick={this.onOpenModal}>Đăng ký</Button>
                   </NavItem>
-                  
                 </Nav>
               </Collapse>
             </Container>
