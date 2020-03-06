@@ -16,17 +16,10 @@ import {
 } from "reactstrap";
 function Register() {
   return (
-    <>
-      <div
-        className="section section-imge section-login"
-        style={{
-          backgroundImage:
-            "url(" + require("../../assets/img/login-image.jpg") + ")"
-        }}
-      >
-        <Container>
+    
+        <Container className="form_ux">
           <Row>
-            <Col className="mx-auto" lg="4" md="6">
+            <Col className="mx-auto">
               <Card className="card-register">
                 <h3 className="title mx-auto">Đăng ký</h3>
                 <div className="social-line text-center">
@@ -119,8 +112,7 @@ function Register() {
             </Col>
           </Row>
         </Container>
-      </div>
-    </>
+     
   );
 }
 
