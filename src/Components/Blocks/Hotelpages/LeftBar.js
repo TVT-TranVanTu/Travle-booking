@@ -261,7 +261,7 @@ export default class LeftBar extends Component {
             </Col>
 
             <Col sm="9">
-              <Rightbar></Rightbar>
+              <Rightbar ></Rightbar>
             </Col>
           </Row>
         </Container>

@@ -5,7 +5,7 @@ export default class Box_chat extends Component {
         return (
             <div className="box_chat">
                 <div className="icon_chat">
-                    <i class="fas fa-comment-alt"></i>
+                    <i className="fas fa-comment-alt"></i>
                 </div>
                 <div className="content_chat">
                     bạn cần hỗ trợ ? chat ngay
